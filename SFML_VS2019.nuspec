@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SFML_VS2019</id>
+    <version>1.0</version>
+    <title>SFML_VS2019</title>
+    <authors>Jeffrey Kesselman</authors>
+    <owners>Jeffrey Kesselman</owners>
+    <description>
+      SFML native package for Visual Studio 2019
+      This package currently only supports 32 bit builds
+    </description>
+    <releaseNotes></releaseNotes>
+    <summary>
+      SFML native VS2019
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://sfml-dev.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.sfml-dev.org/license.php</licenseUrl>
+    <copyright></copyright>
+    <dependencies>
+    </dependencies>
+    <references></references>
+    <tags>native</tags> <!-- This is important ! -->
+  </metadata>
+  <files>
+      <!-- Note that now, binaries are placed conventionally under a directory named build -->
+      <file src="bin\**" target="build\native\bin" exclude="**.pdb"/>
+      <file src="lib\**" target="build\native\lib" exclude="**.pdb"/>
+      <file src="include\**" target="build\native\include" />
+      <file src="doc\**" target="doc" />
+      <file src="SFML_VS2019.props" target="build" />
+      <file src="SFML_VS2019.targets" target="build" />
+  </files>
+</package>

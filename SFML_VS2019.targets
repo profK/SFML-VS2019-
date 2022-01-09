@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <SFMLDLLS Include="$(MSBuildThisFileDirectory)native\bin\*.dll" />
+    </ItemGroup>
+    <Target Name="SFMLDLLTarget" AfterTargets="Build">
+        <Copy SourceFiles="@(SFMLDLLS)" DestinationFolder="$(OutDir)" />
+    </Target>
+</Project>
