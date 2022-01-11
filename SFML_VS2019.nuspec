@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SFML_VS2019</id>
-    <version>1.0</version>
+    <version>0.9.5</version>
     <title>SFML_VS2019</title>
     <authors>Jeffrey Kesselman</authors>
     <owners>Jeffrey Kesselman</owners>
@@ -26,10 +26,14 @@
   </metadata>
   <files>
       <!-- Note that now, binaries are placed conventionally under a directory named build -->
-      <file src="bin\**" target="build\native\bin" exclude="**.pdb"/>
-      <file src="lib\**" target="build\native\lib" exclude="**.pdb"/>
-      <file src="include\**" target="build\native\include" />
-      <file src="doc\**" target="doc" />
+      <file src="Win32\bin\**" target="build\native\Win32\bin" />
+      <file src="Win32\lib\**" target="build\native\Win32\lib" />
+      <file src="Win32\include\**" target="build\native\Win32\include" />
+      <file src="Win32\doc\**" target="Win32\doc" />
+      <file src="x64\bin\**" target="build\native\x64\bin" />
+      <file src="x64\lib\**" target="build\native\x64\lib" />
+      <file src="x64\include\**" target="build\native\x64\include" />
+      <file src="x64\doc\**" target="x64\doc" />
       <file src="SFML_VS2019.props" target="build" />
       <file src="SFML_VS2019.targets" target="build" />
   </files>
