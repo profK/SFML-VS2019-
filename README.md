@@ -10,9 +10,9 @@ This single package supports x86 and x64 builds in both debug and release build 
 To use, see https://www.nuget.org/packages/SFML_VS2019/
 
 To build:  
-Download the nuget.exe tool from https://www.nuget.org/downloads
-CD to the project root directory (the one with SFML_VS2019.nuspec in it)
-Execute the following command:  nuget pack
+- Download the nuget.exe tool from https://www.nuget.org/downloads
+- CD to the project root directory (the one with SFML_VS2019.nuspec in it)
+- Execute the following command:  nuget pack
 
 The version number is in the SFML_VS2019.nuspec XML file. You probably want to change it.
 Please also release any forked versions with clear descriptions of what is changed in the package description on nuget.org
